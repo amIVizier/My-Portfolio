@@ -1,0 +1,433 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+}
+
+
+.vizlogo {
+    font-family: "Bookman Old Style", sans-serif;
+    color:	rgb(199, 215, 221);
+    font-size: 25px;
+    letter-spacing: -1px;
+    margin-left: 100px;
+    position: fixed;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #000000
+       }
+
+
+.scrollable{
+width: 100% ;
+background-color: #444;
+height: 2000px;
+background-color: rgb(101, 116, 111);
+}
+
+
+.menucontainer{
+ height: 60px;
+ width: 20%;
+ margin-left:80%;
+ position: sticky;
+ top: 0;
+}
+
+.show-about:hover, .show-experience:hover,  .show-contact:hover  {
+background-color: red;
+}
+
+
+/* copy of buttons */
+
+.show-about, .show-experience , .show-contact{
+   border-radius: 5px;
+   background-color: rgba(174, 151, 196, 0.89);
+}
+
+.show-about{
+   box-shadow: 5px 5px 5px #243538;
+   
+   font-size: 20px;
+   text-align: center;
+   width: 30%;
+   display: inline;
+   margin: 6px 3px;
+   height: 40px;
+   cursor: pointer;
+}
+
+.show-experience{
+   box-shadow: 5px 5px 5px #243538;
+  
+   font-size: 20px;
+   text-align: center;
+   width: 30%;
+   display: inline;
+   margin: 6px 3px;
+   height: 40px;
+   cursor: pointer;
+}
+
+.show-contact{
+   box-shadow: 5px 5px 5px #243538;
+  
+   font-size: 20px;
+   text-align: center;
+   width: 30%;
+   display: inline;
+   margin: 6px 3px;
+   height: 40px;
+   cursor: pointer;
+
+}
+
+
+
+/* 
+about marky here */
+
+
+/* .menu{
+background-color: rgb(164, 202, 204);
+height:90%;
+width: 60%;
+margin-top: 3%;
+margin-left: 15%;
+color: white;
+position: absolute;
+display: flex;
+cursor: pointer;
+
+} */
+
+
+/* copy of menu */
+.about, .contact, .experience{
+background-color: rgb(117, 82, 141);
+border-radius: 20px;
+box-shadow: 5px 5px 5px #243538;
+}
+
+.about{
+
+   height:900px;
+   width: 60%;
+   margin-top: 3%;
+   margin-left: 15%;
+   color: white;
+   position: fixed;
+   display: flex;
+   cursor: pointer;
+   flex-direction: column;
+   text-align: center;
+   box-shadow: 8px 3px #2e7a88;
+   /* //LESSON  its about putting a close above the z index*/
+   z-index: 10;
+   
+   }
+
+   .experience{
+  
+      height:900px;
+      width: 60%;
+      margin-top: 3%;
+      margin-left: 15%;
+      color: white;
+      position: fixed;
+      display: flex;
+      cursor: pointer;
+      z-index: 10;
+      }
+
+
+      .contact{
+        
+         height:450px;
+         width: 60%;
+         margin-top: 3%;
+         margin-left: 15%;
+         color: white;
+         position: fixed;
+         display: flex;
+         cursor: pointer;
+         text-align: center;
+         align-content:center ;
+         z-index: 10;
+         }
+
+.contactletter{
+background-color: #2e7a88;
+height: 50%;
+width: 50%;
+font-size: 60px;
+margin-left:20% ;
+margin-top: 10%;
+border-radius: 20px;
+}
+
+.contactpic{
+margin-top: 20px;
+height: 20px;
+font-size: 20px;
+}
+
+ /* content of about*/
+.aboutmetitle, .aboutmecontent1, .aboutmecontent2, .aboutmecontent3{
+  
+  padding: 5px;
+  font-size: large;
+  box-shadow: 8px 3px #2e7a88;
+   background-color: #757c9b;
+
+}
+
+.mypic{
+   background-color: inherit;
+   height: 50%;
+   width: 29%;
+   flex-direction: row;
+   margin-left: 10px;
+}
+
+
+
+
+.markpic{
+width: 90%;
+float: left;
+box-shadow: 10px 15px #2e7a88;
+}
+
+
+ .aboutmetitle{
+   height: 5%;
+   width: 20%;
+   margin-left: 30%;
+ }
+
+.aboutmecontent1{
+   height: 20%;
+   width: 60%;
+   margin-top: 4%;
+   margin-left: 30%;
+   position: absolute;
+   text-align: left;
+   padding: 20px;
+}
+
+
+.aboutmecontent2{
+   height: 20%;
+   position: absolute;
+   width: 60%;
+   margin-top: 20%;
+   margin-left: 30%;
+   text-align: left;
+   padding: 20px;
+}
+
+.aboutmecontent3{
+   height: 20%;
+   margin-left: 50px;
+   width: 86%;
+   padding: 20px;
+   text-align: center;
+}
+
+.csslogo, .htmllogo,  .javascriptlogo{
+   margin-top: 20px;
+   width: 80px;
+   padding: 10px;
+}
+
+/* .htmllogo{   
+   width: 80px;
+}
+
+
+.javascriptlogo{   
+   width: 80px;
+   
+} */
+
+   /* modal */
+   .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(3px);
+      z-index: 5;
+    }
+
+
+
+.hidden {
+   display: none;
+ }
+
+
+ .close-menu, .close-about, .close-experience, .close-contact {
+   position: absolute;
+   left: 1083px;   
+   font-size: 3rem;
+   color: #0e0909;
+   cursor: pointer;
+   padding: -3px;
+   background-color: rgb(197, 36, 197);
+   border-radius: 20px;
+   font-family: 'Bookshelf Symbol 7';
+   
+ }
+
+
+
+
+.markycontainer{
+background-image: url("vizier.png") ;
+height: 900px;
+width: 100%;
+border: 1px solid rgb(216, 210, 216);
+display: block;
+border-radius: 20px;
+font-family: "Sitka Banner Semibold";
+}
+
+.markname1{
+   font-size: 120px;
+   
+   background-color: blueviolet;
+   border-radius: 30px;
+   width: 50%;
+   margin-bottom: 2px;
+   box-shadow: 5px 5px 5px #243538;
+   padding-left: 10px;
+}
+
+.markname2{
+   font-size: 120px;
+   background-color: blueviolet;
+   width: 50%;
+   margin-bottom: 2px;
+   border-radius: 30px;
+   text-align: center;
+   box-shadow: 5px 5px 5px #243538;
+
+}
+
+.markname3{
+   font-size: 120px;
+   background-color: blueviolet;
+   width: 50%;
+   border-radius: 30px;
+   text-align: right;
+   box-shadow: 5px 5px 5px #243538;
+   padding-right: 10px;
+}
+
+
+.immarkysite{
+   background-color: inherit;
+   height: 80%;
+   width: 50%;
+   margin-top: 5%;
+   margin-left: 1%;
+   font-size: 45px;
+   color: white;
+   text-shadow: 2px 2px 4px #000000
+ }
+
+ .markycontent2, .markycontent3,.markycontent4,.markycontent5,.markycontent6,.markaddon{
+   color: white;
+   text-shadow: 2px 2px 4px #000000
+ }
+
+
+.markycontent1{
+  display: inline;
+    width: 15%;
+
+    margin-left: 0;
+    font-size: 50px;
+}
+
+.markycontent2{
+   display: inline;
+    width: 2%;
+    color: white;
+
+    }
+
+.markycontent3{
+   display: inline;
+    width: 10%;
+
+    
+ }
+
+ .markycontent4{
+   display: inline;
+    width: 12%;
+
+ 
+ }
+
+ .markycontent5{
+   display: inline;
+    width: 4%;
+
+ }
+ .markycontent6{
+   display: inline;
+    width: 7%;
+
+            
+ }
+
+
+ .markaddon{
+   display: inline;
+    margin-top:19%;
+    height: 60px;
+    width: 15%;
+    color: white;
+
+ }
+
+.markaddon1 {
+   display: inline;
+
+     
+}
+
+.markaddon2{
+   display: inline;
+
+
+}
+
+
+.markaddon3{
+   display: inline;
+
+}
+
+
+
+/* responsive here */
+
+/* @media only screen and (max-width: 430px) {
+    /* For mobile phones 430px:
+    [class*="col-menu"] {
+       margin-left: 20%;
+    }
+
+}
+
+
+
+ */
