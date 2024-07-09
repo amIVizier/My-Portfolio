@@ -3,24 +3,31 @@
      background-color: rgb(153, 97, 175);
      height: 900px;
      width: 100%;
-   
-     color: azure;
-     display: flex;
-     justify-content: center;
+     color: azure;  
      font-family: "Sitka Banner Semibold";
      border-radius: 25px;
+     text-shadow: 2px 2px 4px #000000;
+     display: block;
     }
 
  
 .secondpagetitle{
-
+  margin-top: 2px;
   height: 5%;
-  width: 10%;
-  position: absolute;
+  width: 100%;
   padding: 1%;
   text-align: center;
-  margin-top: 5px;
+  background-color: initial;
   }
+
+.secondpageworkscontainer{
+ background-color: initial;
+ padding: 1px;
+ height: 90%;
+ width: 100%;
+ display: flex;
+}
+
 
 
 
@@ -28,20 +35,23 @@
 
 
 .work1, .work2, .work3{
-margin-top: 70px;
+
 background-color: rgba(174, 151, 196, 0.89);
-height: 50px;
+height: 40px;
 width: 20%;
+margin-top: 70px;
 text-align: center;
 padding: 20px;
 height: 50%;
 border-radius: 20px;
 box-shadow: 5px 5px 5px #243538;
-font-size: 25px;
+font-size: 2vw;
 }
 
 .work1{
 margin-right: 20px;
+margin-left: 20%;
+
 
 }
 
@@ -57,21 +67,19 @@ margin-right: 20px;
 
 
 .work1:hover, .work2:hover, .work3:hover  {
-  background-color: red;
+  background-color: white;
 
   }
 
 .clonewebsitevid{
-  height: 90%;
+  height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 
 .todoapppiccontainer{
   height: 90%;
   width: 100%;
-
   background-image: url("ToDo Web.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
